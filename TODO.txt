@@ -1,9 +1,0 @@
- - admin-panel
-   - OrdersPages.jsx
-       + При переходе на эту страницу сразу должны появляться new-order элементы, а они появляются только при нажатии на new-order
-
- - frontend
-   - MainProductionPage.jsx
-       + Нету функции для фильтрации
-
-
