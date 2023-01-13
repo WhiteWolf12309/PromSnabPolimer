@@ -1,0 +1,40 @@
+.qualities {
+    &__inner {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+        width: 80%;
+        margin: 0 auto;
+
+        .qualities__item {
+            width: 288px;
+            height: 320px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 16px;
+            padding: 30px;
+            transition: box-shadow linear 0.3s;
+
+            &:hover {
+                box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.08);
+            }
+
+            .item__image {
+                width: 200px;
+                margin-bottom: 10px;
+            }
+
+            .item__text {
+                width: 100%;
+                text-align: center;
+                line-height: 1.4;
+                font-size: 18px;
+                font-weight: 600;
+                color: #343434;
+            }
+        }
+    }
+}

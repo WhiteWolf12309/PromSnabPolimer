@@ -1,0 +1,25 @@
+.intro-button {
+    background-color: #fff;
+    padding: 12px 38px;
+    border-radius: 8px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    transition: transform ease-in-out 0.3s;
+
+    &__text {
+        width: 100%;
+        margin-right: 10px;
+    }
+
+    &__img {
+        width: 30px;
+        height: 30px;
+    }
+
+    &:hover {
+        transform: translateY(-3px);
+    }
+}

@@ -1,0 +1,61 @@
+.filter__item {
+    width: 100%;
+    height: auto;
+
+    &-title {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 18px;
+
+        .arrow {
+            width: 15px;
+            height: 15px;
+            margin-right: 10px;
+        }
+    }
+
+    &-body {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .default-filter {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .input-range {
+            width: 45%;
+
+            &-title {
+                margin-bottom: 5px;
+                color: #bababa;
+            }
+
+            .input {
+                width: 100%;
+                border: none;
+                border-bottom: 1px solid #bababa;
+                padding: 10px 5px;
+
+                &::-webkit-outer-spin-button,
+                &::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+                }
+
+                &::placeholder {
+                    color: #bababa;
+                }
+
+                &:focus {
+                    border-bottom-color: #00c271;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,51 @@
+.filter__item {
+    width: 100%;
+    height: auto;
+
+    &-title {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 18px;
+
+        .arrow {
+            width: 15px;
+            height: 15px;
+            margin-right: 10px;
+        }
+    }
+
+    &-body {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .default-filter {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .checkbox-body {
+            label {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin-bottom: 10px;
+
+                .MuiCheckbox-root {
+                    width: 10px;
+                    height: 10px;
+                    margin-right: 10px;
+                }
+
+                .checkbox-text {
+                    font-size: 16px;
+                    color: #8f8f8f;
+                }
+            }
+        }
+    }
+}

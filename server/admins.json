@@ -1,0 +1,5 @@
+{
+    "admins": [
+        {"id": 1, "role": "", "firstName": "Даниил", "secondName": "Землянов", "email": "daniilzemla@gmail.com", "password": "$2b$07$VUgDOpssx6aYpWEkQ5pvxOTaePT4o68PdfiR7U4JMze4FsNaJlDgu"}
+    ]
+}

@@ -1,0 +1,91 @@
+.support-page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+
+    &__inner {
+        width: 100%;
+
+        .inner__buttons {
+            display: flex;
+
+            .button {
+                padding: 16px 40px;
+                margin-bottom: -1px;
+                border: 1px solid #e6e6e6;
+                cursor: pointer;
+                transition: border-color linear 0.3s;
+
+                &.br-tl-8 {
+                    border-radius: 8px 0px 0px 0px;
+                }
+
+                &.br-tr-8 {
+                    border-radius: 0px 8px 0px 0px;
+                }
+
+                &.active {
+                    border-color: #0038ff;
+                }
+            }
+        }
+
+        .inner__body {
+            width: 100%;
+            height: 85vh;
+            border: 1px solid #e6e6e6;
+            padding: 20px;
+            border-radius: 0px 8px 8px 8px;
+            overflow: auto;
+
+            .table__units {
+                width: 100%;
+                height: 30px;
+                justify-content: space-between;
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 20px;
+
+                .unit__order-body,
+                .unit__order-name,
+                .unit__order-contact-data,
+                .unit__order-date,
+                .unit__order-status {
+                    border-left: 1px solid #e6e6e6;
+                    text-align: center;
+                    border-right: 1px solid #e6e6e6;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .unit__order-body {
+                    width: 40%;
+                }
+
+                .unit__order-contact-data {
+                    width: 15%;
+                }
+
+                .unit__order-name {
+                    width: 15%;
+                }
+
+                .unit__order-date {
+                    width: 15%;
+                }
+
+                .unit__order-status {
+                    width: 15%;
+                }
+            }
+
+            .table__body {
+                width: 100%;
+            }
+        }
+    }
+}

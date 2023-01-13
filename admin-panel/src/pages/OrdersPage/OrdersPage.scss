@@ -1,0 +1,138 @@
+.orders-page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+
+    &__inner {
+        width: 100%;
+
+        .inner__buttons {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .left {
+                display: flex;
+
+                .button {
+                    padding: 16px 40px;
+                    margin-bottom: -1px;
+                    border: 1px solid #e6e6e6;
+                    cursor: pointer;
+                    transition: border-color linear 0.3s;
+
+                    &.br-tl-8 {
+                        border-radius: 8px 0px 0px 0px;
+                    }
+
+                    &.br-tr-8 {
+                        border-radius: 0px 8px 0px 0px;
+                    }
+
+                    &.active {
+                        border-color: #0038ff;
+                    }
+                }
+            }
+
+            .right {
+                padding-right: 10px;
+                .add-order__btn {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 200px;
+                    height: 40px;
+                    border-radius: 4px;
+                    background-color: #4fc45b;
+                    cursor: pointer;
+                    transition: background-color linear 0.3s;
+
+                    &:hover {
+                        background-color: darken(#4fc45b, 8);
+                    }
+
+                    &-text {
+                        color: #fff;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+
+        .inner__body {
+            width: 100%;
+            height: 85vh;
+            border: 1px solid #e6e6e6;
+            padding: 20px;
+            border-radius: 0px 8px 8px 8px;
+            overflow: auto;
+
+            .table__units {
+                width: 100%;
+                height: 30px;
+                justify-content: space-between;
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 20px;
+
+                .unit__order-id,
+                .unit__order-body,
+                .unit__order-price,
+                .unit__order-contact-data,
+                .unit__order-date,
+                .unit__order-place,
+                .unit__order-order,
+                .unit__order-status {
+                    border-left: 1px solid #e6e6e6;
+                    text-align: center;
+                    border-right: 1px solid #e6e6e6;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 14px;
+                }
+
+                .unit__order-id {
+                    width: 3%;
+                }
+
+                .unit__order-body {
+                    width: 37%;
+                }
+
+                .unit__order-price {
+                    width: 10%;
+                }
+
+                .unit__order-contact-data {
+                    width: 10%;
+                }
+
+                .unit__order-date {
+                    width: 10%;
+                }
+
+                .unit__order-order {
+                    width: 10%;
+                }
+
+                .unit__order-place {
+                    width: 10%;
+                }
+
+                .unit__order-status {
+                    width: 10%;
+                }
+            }
+
+            .table__body {
+                width: 100%;
+            }
+        }
+    }
+}

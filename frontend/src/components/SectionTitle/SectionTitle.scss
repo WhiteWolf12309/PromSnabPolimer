@@ -1,0 +1,24 @@
+.section-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    width: 100%;
+
+    .title {
+        font-size: 45px;
+        color: #343434;
+        font-weight: 800;
+        margin-bottom: 20px;
+    }
+
+    .line {
+        display: block;
+        width: 100px;
+        height: 5px;
+        background-color: #5b76ff;
+        border-radius: 8px;
+    }
+}
